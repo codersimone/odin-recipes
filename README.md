@@ -9,8 +9,8 @@ Project Features:
 1/ Semantic Structure:
 
 The homepage is organized using semantic tags like <header>, <main>, and <footer>.
-The recipe directory is implemented with <nav> and lists (<ul>, <li>).
-Each recipe page is structured with <article>, <section>, and <h1>–<h6> for headings.
+The recipe directory is implemented with 'nav' and lists ('ul', 'li').
+Each recipe page is structured with 'article', 'section', and 'h1'–'h6' for headings.
 Aesthetic Design:
 
 2/ Styling is done using CSS to create a clean and modern interface.
