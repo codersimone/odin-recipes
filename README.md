@@ -1,14 +1,14 @@
-# Odin Recipe Website
-An educational project demonstrating modern web development techniques on a recipe website created by me, a student of the ODIN project.
+# Odin Recipes
+An educational project demonstrating modern web development techniques on a recipe website created by me, a student of The Odin Project.
 
 ## Table of Contents  
 - [About the Project](#about-the-project)  
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
-- [Setup Instructions](#setup-instructions) 
+- [Рublished Website](#published-website) 
 
 ## About the Project  
-The Odin Recipe Website is an educational project created as part of **The Odin Project** curriculum.  
+The Odin Recipes website is an educational project created as part of **The Odin Project** curriculum.  
 It is designed to teach foundational web development skills by building a semantically structured, accessible, and visually appealing recipe site.  
 
 ## Features  
@@ -23,16 +23,12 @@ It is designed to teach foundational web development skills by building a semant
 - **SEO Optimization**:  
   - Meta tags and descriptive alt attributes for improved visibility and accessibility.  
 - **Favicon Integration**:  
-  - A custom favicon for enhanced user experience.  
+  - A custom favicon for enhanced user experience.
 
 ## Technologies Used  
 - **HTML5**: Semantic structure and accessibility.  
 - **CSS3**: Styling and responsive design.  
 - **JavaScript (ES6+)**: Interactivity and client-side logic.  
 
-## Setup Instructions  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/codersimone/odin-recipes.git
-
-2. Open index.html in your browser to view the website.
+## Рublished Website
+https://codersimone.github.io/odin-recipes/
