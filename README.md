@@ -1,32 +1,38 @@
-# odin-recipes
+# Odin Recipe Website
+An educational project demonstrating modern web development techniques on a recipe website created by me, a student of the ODIN project.
 
-Project Description:
-The recipe website is an educational project developed using HTML5, CSS3, and JavaScript ES6+. 
-The main goal of the project is to create a semantically correct and accessible web application that provides convenient navigation and an enjoyable user experience.
+## Table of Contents  
+- [About the Project](#about-the-project)  
+- [Features](#features)  
+- [Technologies Used](#technologies-used)  
+- [Setup Instructions](#setup-instructions) 
 
-Project Features:
-Semantic Structure:
-- The homepage is organized using semantic tags like 'header', 'main', and 'footer'.
-- The recipe directory is implemented with 'nav' and lists ('ul', 'li').
-- Each recipe page is structured with 'article', 'section', and 'h1'–'h6' for headings.
+## About the Project  
+The Odin Recipe Website is an educational project created as part of **The Odin Project** curriculum.  
+It is designed to teach foundational web development skills by building a semantically structured, accessible, and visually appealing recipe site.  
 
-Aesthetic Design:
-- Styling is done using CSS to create a clean and modern interface.
-- Responsive design elements ensure proper display across different devices.
+## Features  
+- **Semantic Structure**:  
+  - Organized with semantic HTML tags like `<header>`, `<main>`, and `<footer>`.  
+  - Recipes are presented using `<article>`, `<section>`, `<figure>`, and `<figcaption>`.  
+- **Aesthetic Design**:  
+  - Clean and modern styling with CSS3.  
+  - Responsive layout for seamless display on various devices.  
+- **Interactivity**:  
+  - Navigation highlighting, collapsible ingredient lists, and basic animations using JavaScript.    
+- **SEO Optimization**:  
+  - Meta tags and descriptive alt attributes for improved visibility and accessibility.  
+- **Favicon Integration**:  
+  - A custom favicon for enhanced user experience.  
 
-Interactivity:
-- Basic functionality implemented with JavaScript, such as highlighting the current navigation link, collapsible ingredient lists, or simple animations.
-- A feature to add recipes to favorites (without server-side data storage).
+## Technologies Used  
+- **HTML5**: Semantic structure and accessibility.  
+- **CSS3**: Styling and responsive design.  
+- **JavaScript (ES6+)**: Interactivity and client-side logic.  
 
-Cross-Browser Compatibility:
-- The website is tested in popular browsers to ensure consistent behavior.
+## Setup Instructions  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/codersimone/odin-recipes.git
 
-SEO Optimization:
-- Meta tags such as 'title', 'meta description', and 'meta keywords' are used to enhance search engine visibility.
-- Semantic tags improve content hierarchy and accessibility, further boosting SEO rankings.
-- Descriptive alt attributes are added to all images to improve discoverability and accessibility.
-
-Favicon Integration:
-- A favicon has been added to improve user experience and provide a professional look in browser tabs.
-
-This project demonstrates the practical application of modern web technologies, web development principles, basic SEO techniques, and attention to detail in user interface design.
+2. Open index.html in your browser to view the website.
