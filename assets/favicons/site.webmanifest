@@ -1,6 +1,6 @@
 {
-  "name": "Odin Recipes",
-  "short_name": "Odin R",
+  "name": "OdinRecipes",
+  "short_name": "OdinRes",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
