@@ -4,69 +4,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font 'Inter' connection -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Odin Recipes</title>
   <!-- Document favicon in browser tabs -->
-  <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Odin R" />
-  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="OdinRecipes" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
   <!-- Document Search Engine Optimization -->
   <meta name="description" content="THE ODIN project website with recipes">
   <meta name="keywords" content="THE ODIN project, Odin Recipes, Odin R, website, recipes, HTML, CSS, JavaScript">
   <meta name="author" content="Alisa Chentsova for THE ODIN project">
   <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <link rel="stylesheet" href="assets/styles/reset-modern.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
 <body>
-  <header>
-    <a href="./index.html">
-      <img src="assets/favicons/favicon-96x96.png" alt="Logotype" />
-    </a>
-    <nav>
-      <a href="index.html#aboutOR">About Odin Recipes Project</a>
-      <a href="mailto:odinrecipes@example.com">Send Recipes to Odin</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Odin Recipes</h1>
+  <!-- header -->
+  <div class="header__container">
     <section>
-      <article id="aboutOR">
-        <h4>Behold, mortals!</h4>
-        <p>
-          Upon this hallowed site, forged in the fires of inspiration and tempered by the wisdom of ages, lies <strong>a
-            collection of recipes most divine</strong>.<br />
-          Here, step by step, the secrets of the hearth are inscribed — each dish a
-          treasure gathered from distant realms and lovingly etched into the fabric of this domain.<br />
-          I, Odin, All-Father of Asgard, have summoned forth these culinary wonders, that you may feast as gods upon the
-          flavors of Midgard and beyond.<br />
-          Each recipe, a saga unto itself, awaits thy bold hand to bring it to life.
-          Venture forth, brave soul, and may your table be ever laden with the bounty of your triumphs!
-        </p>
-        <em>Skål!</em>
-      </article>
+      <header class="header">
+        <a class="logo" href="./index.html">
+          <img class="logo__img" src="/assets/favicons/favicon-96x96.png" alt="Logotype" />
+        </a>
+        <!-- nav -->
+        <nav class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="index.html">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="index.html#aboutOR">About us</a>
+            </li>
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="mailto:odinrecipes@example.com">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </section>
-    <section>
-      <p>All recipes</p>
-      <ul>
-        <li><a href="recipes/lasagna.html">Meat Lasagna</a></li>
-        <li><a href="recipes/caprese.html">Caprese salad</a></li>
-        <li><a href="recipes/tiramisu.html">Tiramisu dessert</a></li>
-      </ul>
-    </section>
-    <!-- TODO: simple JavaScript animation for: -->
-    <!-- <aside>description of what is 'Skål'</aside> -->
-  </main>
-  <footer>
-    <p>©2024 Odin Recipes website | all rights reserved</p>
-  </footer>
+  </div>
+
+  <!-- main -->
+  <div class="main__container">
+    <main class="main">
+
+      <!-- h1 section -->
+      <div class="main__h1-container">
+        <section>
+          <h1 class="main__h1-heading">Odin Recipes</h1>
+        </section>
+      </div>
+
+      <!-- about section -->
+      <div class="main__about-container">
+        <section id="aboutOR">
+          <h4 class="main__h4-heading">Behold, mortals!</h4>
+          <p class="main__paragraph">
+            Upon this hallowed site, forged in the fires of inspiration and tempered by the wisdom of ages, lies
+            <strong>a
+              collection of recipes most divine</strong>.<br />
+            Here, step by step, the secrets of the hearth are inscribed — each dish a
+            treasure gathered from distant realms and lovingly etched into the fabric of this domain.
+          </p>
+          <p class="main__paragraph">
+            I, Odin, All-Father of Asgard, have summoned forth these culinary wonders, that you may feast as gods upon
+            the
+            flavors of Midgard and beyond.<br />
+            Each recipe, a saga unto itself, awaits thy bold hand to bring it to life.
+            Venture forth, brave soul, and may your table be ever laden with the bounty of your triumphs!
+          </p>
+          <em class="main__signature">Skål!</em>
+        </section>
+      </div>
+
+      <!-- TODO: simple JavaScript animation for: -->
+      <!-- <aside>description of what is 'Skål'</aside> -->
+
+      <!-- recipes article -->
+      <div class="main__recipes-container">
+        <section>
+          <article>
+            <p class="main__article-title">All recipes</p>
+            <ul class="main__article-list">
+              <li class="main__article-item">
+                <a class="main__article-link" href="recipes/lasagna.html">Meat Lasagna</a>
+              </li>
+              <li class="main__article-item">
+                <a class="main__article-link" href="recipes/caprese.html">Caprese salad</a>
+              </li>
+              <li class="main__article-item">
+                <a class="main__article-link" href="recipes/tiramisu.html">Tiramisu dessert</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- footer -->
+  <div class="footer__container">
+    <footer class="footer">
+      <p class="footer__paragraph">©2024 Odin Recipes website</p>
+    </footer>
+  </div>
 </body>
 
 </html>
