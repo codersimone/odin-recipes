@@ -1,159 +1,118 @@
 body {
-  /* block model */
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 840px;
   min-height: 100vh;
-  box-sizing: border-box;
-  /* typography */
+  margin: 0 auto;
   font-family: "MuseoModerno", "Palatino", serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  /* decoration */
+  line-height: 1.6em;
   color: rgb(48, 48, 48);
+  background-color: rgb(255, 255, 255);
 }
 
-/* Gray lines */
-.header__container,
-.main__h1-container,
-.main__about-container,
-.main__recipes-container {
-  border-bottom: 2px solid rgba(111, 111, 111, 0.5);
-}
-
-/* Limiting width of the site sections */
 .header,
-section,
 .footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  /* padding: 0 1em; */
+  display: flex;
+  align-items: center;
 }
 
-/* .header { */
-/* positioning */
-/* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; */
-/* block model */
-/* width: 100%; */
-/* padding: 0.3em 0; */
-/* } */
-
-.logo__img {
-  height: 5em;
-  width: auto;
+.header,
+.main,
+.footer {
+  padding: 1em 2em;
 }
 
-/* Navigation bar */
-/* .nav-menu__list {
-  width: 5em;
-} */
+.header {
+  justify-content: space-between;
+  /* border: 5px dotted red; */
+}
 
-.nav-menu__link {
-  /* block model */
-  display: inline;
-  padding: 0.5em 1em;
-  /* typography */
-  font-weight: 600;
-  /* decoration */
-  color: rgb(48, 48, 48, 0.5);
-  /* animation */
+.logo {
+  flex-shrink: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: rgb(227, 178, 97);
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  padding-left: 2em;
+  gap: 3em;
+}
+
+.nav__link,
+.main__article-link {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: rgb(48, 48, 48);
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.nav-menu__link:hover,
-.nav-menu__link:focus {
-  color: rgb(48, 48, 48);
+.nav__link:hover,
+.nav__link:focus {
+  color: rgb(204, 0, 0);
 }
 
-/* TODO - выровнять ширину бордера и установить его статически (чтобы не исчезал) ? */
-/* .nav-menu__link:active {
-  border-bottom: 0.3em solid rgb(204, 0, 0);
-} */
-
-/* Main heading section */
-/* .main__h1-container {
-  margin-top: 8em;
-} */
-
-.main__h1-heading {
-  /* typography */
-  font-size: 10em;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: -0.06em 0.08em 0 rgb(48, 48, 48);
-  /* decoration */
-  color: hsl(0, 100%, 40%);
-}
-
-/* Main content */
 /* About section */
-/* .main__about-container { */
-/* block model */
-/* width: 60%; */
-/* padding-right: 2rem; */
-/* decoration */
-/* border-right: 2px solid rgba(111, 111, 111, 0.5); */
-/* } */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.about {
+  margin: 4em 0;
+}
 
 .main__h4-heading {
-  /* block model */
-  margin-top: 3em;
-  padding-bottom: 0.5em;
-  /* typography */
-  font-size: 1.5em;
-  /* decoration */
+  padding-bottom: 1em;
+  font-size: 1.4em;
   color: rgb(227, 178, 97);
 }
 
 strong {
-  color: hsl(0, 100%, 40%);
+  color: rgb(204, 0, 0);
+}
+
+.main__paragraph {
+  padding-bottom: 0.8em;
+  font-size: 1em;
 }
 
 .main__signature {
-  /* block model */
-  display: block;
-  margin-bottom: 3em;
-  padding-top: 0.5em;
-  /* typography */
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: right;
   font-style: italic;
-  /* decoration */
   color: rgb(227, 178, 97);
 }
 
 /* Recipes section */
 .main__h3-heading {
-  /* block model */
-  margin: 2em 0;
-  /* typography */
-  font-size: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.6em;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  /* decoration */
   color: rgb(227, 178, 97);
 }
 
 .main__article {
-  /* block model */
-  display: inline-block;
-  width: 380px;
-  margin: 0 0.5em 3em 0.5em;
-  padding: 1em;
-  /* typography */
+  display: flex;
+  justify-content: center;
   text-align: center;
-  /* decoration */
-  border: 2px solid rgba(111, 111, 111, 0.5);
+  margin-bottom: 2em;
+  padding: 1em;
+  font-size: 1.2em;
+  border: 0.2em solid rgba(111, 111, 111, 0.5);
 }
 
-.main__article-link {
-  /* typography */
-  font-weight: bold;
-  /* animation */
-  transition: color 0.3s ease;
+.main__article:hover {
+  border: 0.2em solid rgb(204, 0, 0);
 }
 
 .main__article-link:hover,
@@ -169,255 +128,15 @@ strong {
 .main__article-images {
   width: 60px;
   height: 60px;
+  padding-top: 0.4em;
   margin: 0 auto;
 }
 
-/* Footer */
 .footer {
-  /* positioning */
-  /* position: fixed;
-  bottom: 0; */
-  /* left: 0; */
-  /* block model */
-  /* width: 100%; */
-  height: 40px;
-  padding-top: 10px;
-  /* typography */
-  text-align: center;
-}
-
-
-
-/* ______________________________________________________________________ */
-
-/* body { */
-/* block model */
-/* min-height: 100vh; */
-/* typography */
-/* font-family: "MuseoModerno", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal; */
-/* decoration */
-/* color: rgb(48, 48, 48); */
-/* background: linear-gradient(to bottom, rgb(47, 47, 47), rgb(15, 15, 15)); */
-/* } */
-
-/* body,
-.header,
-.footer { */
-/* decoration */
-/* background-color: rgba(255, 245, 238, 0.9);
-} */
-
-/* Header */
-/* .header { */
-/* positioning */
-/* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-} */
-
-/* Gray lines */
-/* .header,
-.section-h1__container { */
-/* block model */
-/* width: 100%;
-  padding: 0.3rem 0; */
-/* decoration */
-/* border-bottom: 2px solid rgba(111, 111, 111, 0.5);
-} */
-
-/* .header__container { */
-/* block model */
-/* max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-} */
-
-/* .logo__img { */
-/* block model */
-/* height: 50px;
-  width: auto;
-} */
-
-/* Navigation bar */
-/* .nav-menu {} */
-
-/* .nav-menu__list { */
-/* typography */
-/* list-style: none;
-} */
-
-/* .nav-menu__item {} */
-
-/* .nav-menu__link { */
-/* block model */
-/* padding: 0.5rem 1rem; */
-/* typography */
-/* font-weight: 600; */
-/* decoration */
-/* color: rgb(48, 48, 48, 0.5); */
-/* animation */
-/* transition: color 0.3s ease, background-color 0.3s ease;
-} */
-
-/* .nav-menu__link:hover { */
-/* decoration */
-/* color: rgb(48, 48, 48);
-  background-color: rgb(227, 178, 97);
-  border-radius: 2px;
-}
-
-.nav-menu__link,
-.article__link {
-  text-decoration: none;
-} */
-
-/* Main heading section */
-/* .section-h1__container {
-  margin-top: 8rem;
-} */
-
-/* .section-h1__heading { */
-/* typography */
-/* font-size: 10rem;
-  font-weight: 900;
-  text-align: center;
+  flex-shrink: 0;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(227, 178, 97);
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgb(48, 48, 48); */
-/* decoration */
-/* color: hsl(0, 100%, 40%);
-} */
-
-
-/* Main content */
-/* .article__container {
-  width: 80%;
-} */
-
-/* .main { */
-/* block model */
-/* max-width: 1200px;
-  margin: 0 auto 2rem;
-} */
-
-/* About section */
-/* .section-about__container { */
-/* block model */
-/* width: 60%; */
-/* padding-right: 2rem; */
-/* decoration */
-/* border-right: 2px solid rgba(111, 111, 111, 0.5); */
-/* } */
-
-/* .section__heading { */
-/* block model */
-/* margin-bottom: 1rem;
-  padding-top: 2rem; */
-/* typography */
-/* font-size: 1.5rem; */
-/* decoration */
-/* color: rgb(227, 178, 97);
-} */
-
-/* .section__paragraph { */
-/* block model */
-/* margin-bottom: 1rem;
 }
-
-strong {
-  color: hsl(0, 100%, 40%);
-} */
-
-/* .section__signature { */
-/* block model */
-/* display: block;
-  padding-bottom: 2rem; */
-/* typography */
-/* font-style: italic;
-  text-align: right; */
-/* decoration */
-/* color: rgb(227, 178, 97);
-} */
-
-/* article {
-  width: 100%;
-  background-color: blue;
-} */
-
-/* .main .article__recipes {
-  border-top: 2px solid rgba(111, 111, 111, 0.5);
-} */
-
-
-
-
-/* Recipes section */
-/* .article__recipes { */
-/* block model */
-/* width: 100%; */
-/* margin: 0 auto 2rem; */
-/* decoration */
-/* border-top: 2px solid rgba(111, 111, 111, 0.5); */
-/* 
-  background-color: brown;
-} */
-
-/* .article__title { */
-/* block model */
-/* margin: 4rem 0; */
-/* typography */
-/* font-size: 1.2rem;
-  text-align: center; */
-/* decoration */
-/* color: rgb(227, 178, 97);
-} */
-
-/* .article__list { */
-/* block model */
-/* padding: 0;
-  margin: 0; */
-/* typography */
-/* list-style-type: none;
-} */
-
-/* .article__item { */
-/* block model */
-/* margin-bottom: 0.5rem;
-} */
-
-/* .article__link { */
-/* typography */
-/* font-weight: bold; */
-/* decoration */
-/* color: rgb(48, 48, 48, 0.5); */
-/* animation */
-/* transition: color 0.3s ease;
-} */
-
-/* .article__link:hover { */
-/* decoration */
-/* color: rgb(227, 178, 97);
-} */
-
-/* Footer */
-/* .footer { */
-/* positioning */
-/* position: fixed;
-  bottom: 0;
-  left: 0; */
-/* block model */
-/* width: 100%;
-  padding: 1rem 0; */
-/* typography */
-/* text-align: center; */
-/* decoration */
-/* border-top: 2px solid rgba(111, 111, 111, 0.5);
-} */
-
-/* .footer__paragraph { */
-/* block model */
-/* margin: 0;
-} */
