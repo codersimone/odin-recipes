@@ -10,27 +10,26 @@ An educational project demonstrating modern web development techniques on a reci
 ## About the Project
 The Odin Recipes website is an educational project created as part of **The Odin Project** curriculum.
 It is designed to teach foundational web development skills by building a semantically structured, accessible, and visually appealing recipe site.
+The site serves as a collection of recipes, organized in a clear and easy-to-understand format. The project emphasizes the use of proper semantic HTML elements and modern CSS techniques to ensure high performance and accessibility.
 
 ## Features
 - **Semantic Structure**:
-  - Organized with semantic HTML tags like `<header>`, `<main>`, and `<footer>`.
-  - Recipes are presented using `<article>`, `<section>`, `<figure>`, and `<figcaption>`.
-- **Aesthetic Design**:
-  - Clean and modern styling with CSS3.
+  - Use of semantic HTML tags such as `<header>`, `<main>`, and `<footer>` to improve code readability and SEO performance.
+  - Recipes are organized using tags like `<article>`, `<section>`, `<figure>`, and `<figcaption>`, enhancing content segmentation.
+- **Design**:
+  - Clean and modern styling with CSS3 for an attractive appearance.
   - Responsive layout for seamless display on various devices.
-- **Interactivity**:
-  - Navigation highlighting, collapsible ingredient lists, and basic animations using JavaScript.
-- **User Experience (UX)**:
-  - Quick email interaction via a mailto link, allowing users to contact the website owner directly.
+- **User Interface**:
+  - Built-in functionality for users to send an email through a mailto link, simplifying interaction with the site owner.
+  - Simple and intuitive navigation with a focus on accessibility.
 - **SEO Optimization**:
-  - Meta tags and descriptive alt attributes for improved visibility and accessibility.
-- **Favicon Integration**:
-  - A custom favicon for enhanced user experience.
+  - Proper use of meta tags and alt attributes for images to improve visibility on search engines.
+  - Structured content for effective indexing and discovery by search engines
 
 ## Technologies Used
-- **HTML5**: Semantic structure and accessibility.
-- **CSS3**: Styling and responsive design.
-- **JavaScript (ES6+)**: Interactivity and client-side logic.
+- **HTML5**: Semantic structure, improved accessibility, and SEO.
+- **CSS3**: Styling and responsive layout.
+- **Google Fonts**: Use of custom fonts to enhance the visual appearance and readability.
 
 ## Рublished Website
 https://codersimone.github.io/odin-recipes/
