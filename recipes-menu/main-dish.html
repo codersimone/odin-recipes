@@ -4,32 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font '_________' connection -->
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Main dish</title>
-  <!-- Document favicon in browser tabs -->
   <!-- Document Search Engine Optimization -->
-  <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <meta name="description"
+    content="Welcome to the Main dish section of the Odin Recipes website. There is a collection of recipes for the Main dishes.">
+  <meta name="keywords"
+    content="THE ODIN project, Odin Recipes, OdinR, website, recipes, cooking, main dishes, main course recipes">
+  <meta name="author" content="Alisa Chentsova for THE ODIN project">
+  <!-- Document external styles (CSS files) connection -->
+  <link rel="stylesheet" href="/assets/styles/reset-file/reset-modern.css">
+  <link rel="stylesheet" href="/assets/styles/recipes-menu-section/main-dish.css">
 </head>
 
 <body>
-  <main>
-    <h1>Main dish</h1>
-    <div class="main__recipes-container">
-      <section>
-        <article>
-          <p class="main__article-title">Recipe collections</p>
-          <ul class="main__article-list">
-            <li class="main__article-item">
-              <a class="main__article-link" href="/recipes/lasagna.html">Meat Lasagna
-              </a>
-            </li>
-          </ul>
-        </article>
-      </section>
-    </div>
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="/index.html">
+      <h1 class="logo__h1-heading">Odin Recipes</h1>
+    </a>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutOR">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="mailto:odinrecipes@example.com">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main class="main-dish-page">
+    <h1 class="main-dish-page__title">Main dish</h1>
+    <article>
+      <p class="main-dish-page__article-title">Recipe collection</p>
+      <ul class="main-dish-page__article-list">
+        <li class="main-dish-page__article-item">
+          <a class="main-dish-page__article-link" href="/recipes/meat-lasagna.html">Meat lasagna
+          </a>
+        </li>
+        <li class="main-dish-page__article-item">
+          <a class="main-dish-page__article-link-blank" href="#">The second recipe is coming soon ...
+          </a>
+        </li>
+      </ul>
+    </article>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__paragraph">©2024 Odin Recipes website</p>
+  </footer>
 </body>
 
 </html>

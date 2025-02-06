@@ -4,91 +4,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font 'Inter' connection -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Caprese salad</title>
-  <!-- Document favicon in browser tabs -->
-  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Odin R" />
-  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
   <!-- Document Search Engine Optimization -->
-  <meta name="description" content="THE ODIN project website with recipes. Page: 'Caprese salad'">
+  <meta name="description"
+    content="Welcome to the recipe page from the Salad section of the Odin Recipes website. The recipe for Caprese salad is described here.">
   <meta name="keywords"
-    content="THE ODIN project, Odin Recipes, Odin R, website, recipes, HTML, CSS, JavaScript, Italian food, Caprese salad">
+    content="THE ODIN project, Odin Recipes, OdinR, website, recipes, cooking, salads recipes, caprese salad">
   <meta name="author" content="Alisa Chentsova for THE ODIN project">
-  <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <!-- Document external styles (CSS files) connection -->
+  <link rel="stylesheet" href="/assets/styles/reset-file/reset-modern.css">
+  <link rel="stylesheet" href="/assets/styles/recipes-pages/caprese.css">
 </head>
 
 <body>
-  <header>
-    <a href="/index.html">
-      <img src="/assets/favicons/favicon-96x96.png" alt="Logotype" />
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="/index.html">
+      <h1 class="logo__h1-heading">Odin Recipes</h1>
     </a>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutOR">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="mailto:odinrecipes@example.com">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <h1>Caprese salad</h1>
-    <img
-      src="https://www.allrecipes.com/thmb/x5H_gkAsPRwbw_S4hlozcVy8Tok=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2644-4x3-f32ac2b2fb9d4234884a752490fb015b.jpg"
-      alt="Caprese salad" width="650" height="500">
+  <!-- Main content -->
+  <main class="сaprese-salad-page">
+    <h1 class="сaprese-salad-page__title">Caprese salad</h1>
+    <p class="сaprese-salad-page__subtitle">Recipe description</p>
     <section>
-      <h2>Recipe description</h2>
-      <p>Total time: 25 mins</p>
-      <p>Servings: 4</p>
-
+      <div class="description-container">
+        <img
+          src="https://www.allrecipes.com/thmb/x5H_gkAsPRwbw_S4hlozcVy8Tok=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2644-4x3-f32ac2b2fb9d4234884a752490fb015b.jpg"
+          alt="Caprese salad" width="650" height="500">
+        <div class="description">
+          <p class="description-left">Total time:</p>
+          <p class="description-right">25 mins</p>
+        </div>
+        <div class="description">
+          <p class="description-left">Servings:</p>
+          <p class="description-right">4</p>
+        </div>
+      </div>
       <article>
-        <h3>Ingredients:</h3>
-        <ul>
-          <li>1 cup balsamic vinegar</li>
-          <li>¼ cup honey</li>
-          <li>3 large tomatoes, cut into 1/2-inch slices</li>
-          <li>1 (16 ounce) package fresh mozzarella cheese, cut into 1/4-inch slices</li>
-          <li>¼ teaspoon salt</li>
-          <li>¼ teaspoon ground black pepper</li>
-          <li>½ cup fresh basil leaves</li>
-          <li>¼ cup extra-virgin olive oil</li>
-        </ul>
+        <details class="ingredients">
+          <summary>Ingredients list:</summary>
+          <ul class="ingredients__list">
+            <li>1 cup balsamic vinegar</li>
+            <li>¼ cup honey</li>
+            <li>3 large tomatoes, cut into 1/2-inch slices</li>
+            <li>1 (16 ounce) package fresh mozzarella cheese, cut into 1/4-inch slices</li>
+            <li>¼ teaspoon salt</li>
+            <li>¼ teaspoon ground black pepper</li>
+            <li>½ cup fresh basil leaves</li>
+            <li>¼ cup extra-virgin olive oil</li>
+          </ul>
+        </details>
       </article>
 
       <article>
-        <h3>Steps</h3>
-        <ol>
-          <li>
-            <figure>
+        <h3 class="steps-title">Steps</h3>
+        <ol class="steps__list">
+          <li class="step">
+            <div class="text">
               <figcaption>
-                Gather all ingredients. Stir balsamic vinegar and honey together in a small saucepan and place over high
+                Gather all ingredients. Stir balsamic vinegar and honey together in a small saucepan and place over
+                high
                 heat.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/Dn0xN8v-OivSMzc41cakHvnpsqw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-28126-caprese-salad-with-balsamic-reduction-ddmfs-2607-3x4-step-01-f197b60341684390b6d9b785ea0cde19.jpg"
                 alt="Image of the ingredients" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
-                Bring to a boil, reduce heat to low, and simmer until mixture has reduced to 1/3 cup, about 10 minutes.
+                Bring to a boil, reduce heat to low, and simmer until mixture has reduced to 1/3 cup, about 10
+                minutes.
                 Set
                 aside to cool.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/a73dPcTWjCMmV-oAKttjrpx9pu4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2614-3x4-step-02-5b6a271a61344321b21a2f3d7684ea81.jpg"
                 alt="Image of a mixture of balsamic vinegar and honey brought to a boil" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Arrange alternating slices of tomato and mozzarella decoratively on a serving platter.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/3YQorn8ljOhhgpB1nbmwiWx1D9Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2616-3x4-step-03-e57d2a317bdd40bfb36c2616801697ef.jpg"
                 alt="Image of alternating slices of tomato and mozzarella on a serving platter" width="600"
@@ -96,12 +124,16 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
-                Sprinkle with salt and black pepper, tuck basil leaves around slices, and drizzle with olive oil and the
+                Sprinkle with salt and black pepper, tuck basil leaves around slices, and drizzle with olive oil
+                and
+                the
                 balsamic reduction.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/x5H_gkAsPRwbw_S4hlozcVy8Tok=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-228126-caprese-salad-with-balsamic-reduction-ddmfs-2644-4x3-f32ac2b2fb9d4234884a752490fb015b.jpg"
                 alt="Image of the dish serving" width="600" height="450">
@@ -111,8 +143,8 @@
       </article>
     </section>
   </main>
-  <footer>
-    <p>©2024 Odin Recipes website | all rights reserved</p>
+  <footer class="footer">
+    <p>©2024 Odin Recipes website</p>
   </footer>
 </body>
 

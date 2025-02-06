@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-width: 840px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "MuseoModerno", "Palatino", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  color: rgb(48, 48, 48);
+  background-color: rgb(255, 255, 255);
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.header,
+.dessert-page,
+.footer {
+  padding: 1em 2em;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.logo {
+  flex-shrink: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: rgb(227, 178, 97);
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  padding-left: 2em;
+  gap: 3em;
+}
+
+.nav__link,
+.dessert-page__article-link {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: rgb(48, 48, 48);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: rgb(204, 0, 0);
+}
+
+/* Main content */
+.dessert-page {
+  flex: 1;
+}
+
+.dessert-page__title {
+  margin-top: 3em;
+  padding-bottom: 0.1em;
+  text-align: center;
+}
+
+.dessert-page__article-title {
+  margin-bottom: 2em;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(227, 178, 97);
+}
+
+.dessert-page__article-list {
+  list-style-type: circle;
+}
+
+.dessert-page__article-link-blank {
+  opacity: 0.5;
+  cursor: none;
+}
+
+.footer {
+  flex-shrink: 0;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(227, 178, 97);
+  text-transform: uppercase;
+}

@@ -4,130 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font 'Inter' connection -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
-  <title>Vegan Chocolate Cake</title>
-  <!-- Document favicon in browser tabs -->
-  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Odin R" />
-  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Vegan Chocolate cake</title>
   <!-- Document Search Engine Optimization -->
-  <meta name="description" content="THE ODIN project website with recipes. Page: 'Vegan Chocolate Cake'">
+  <meta name="description"
+    content="Welcome to the recipe page from the Dessert section of the Odin Recipes website. The recipe for Vegan Chocolate Cake is described here.">
   <meta name="keywords"
-    content="THE ODIN project, Odin Recipes, Odin R, website, recipes, HTML, CSS, JavaScript, Vegan food, Vegan Chocolate Cake">
+    content="THE ODIN project, Odin Recipes, OdinR, website, recipes, cooking, desserts recipes, vegan chocolate cake">
   <meta name="author" content="Alisa Chentsova for THE ODIN project">
-  <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <!-- Document external styles (CSS files) connection -->
+  <link rel="stylesheet" href="/assets/styles/reset-file/reset-modern.css">
+  <link rel="stylesheet" href="/assets/styles/recipes-pages/vegchoccake.css">
 </head>
 
 <body>
-  <header>
-    <a href="/index.html">
-      <img src="/assets/favicons/favicon-96x96.png" alt="Logotype" />
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="/index.html">
+      <h1 class="logo__h1-heading">Odin Recipes</h1>
     </a>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutOR">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="mailto:odinrecipes@example.com">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <h1>Vegan Chocolate Cake</h1>
-    <img
-      src="https://www.allrecipes.com/thmb/Ib13AAcHp633diR7ZuwQS2xg5zY=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/63321476_vegan-chocolate-cake_Rita-3x2-c3ce788f165e4ff4b0d1d74969173407.jpg"
-      alt="Chocolate cake" width="650" height="500">
+  <!-- Main content -->
+  <main class="vegan-chocolate-cake-page">
+    <h1 class="vegan-chocolate-cake-page__title">Vegan Chocolate cake</h1>
+    <p class="vegan-chocolate-cake-page__subtitle">Recipe description</p>
     <section>
-      <h2>Recipe description</h2>
-      <p>Total time: 1 hr</p>
-      <p>Servings: 8</p>
-
+      <div class="description-container">
+        <img
+          src="https://www.allrecipes.com/thmb/Ib13AAcHp633diR7ZuwQS2xg5zY=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/63321476_vegan-chocolate-cake_Rita-3x2-c3ce788f165e4ff4b0d1d74969173407.jpg"
+          alt="Chocolate cake" width="650" height="500">
+        <div class="description">
+          <p class="description-left">Total time:</p>
+          <p class="description-right">5 hrs 35 mins</p>
+        </div>
+        <div class="description">
+          <p class="description-left">Servings:</p>
+          <p class="description-right">12</p>
+        </div>
+      </div>
       <article>
-        <h3>Ingredients:</h3>
-        <ul>
-          <li>6 cups all-purpose flour</li>
-          <li>4 cups white sugar</li>
-          <li>1 cup cocoa powder</li>
-          <li>4 teaspoons baking soda</li>
-          <li>2 teaspoons salt</li>
-          <li>4 cups water</li>
-          <li>1 ⅓ cups vegetable oil</li>
-          <li>4 teaspoons vanilla extract</li>
-          <li>4 teaspoons distilled white vinegar</li>
-        </ul>
+        <details class="ingredients">
+          <summary>Ingredients list:</summary>
+          <ul class="ingredients__list">
+            <li>6 cups all-purpose flour</li>
+            <li>4 cups white sugar</li>
+            <li>1 cup cocoa powder</li>
+            <li>4 teaspoons baking soda</li>
+            <li>2 teaspoons salt</li>
+            <li>4 cups water</li>
+            <li>1 ⅓ cups vegetable oil</li>
+            <li>4 teaspoons vanilla extract</li>
+            <li>4 teaspoons distilled white vinegar</li>
+          </ul>
+        </details>
       </article>
 
       <article>
-        <h3>Steps</h3>
-        <ol>
-          <li>
-            <figure>
+        <h3 class="steps-title">Steps</h3>
+        <ol class="steps__list">
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Gather all ingredients.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/zLaykhUXCH_bBTrlzKB3eDGpQoE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16779-vegan-chocolate-cake-step1-518-66e64173a2174dd5a2dfe474a3775ddf.jpg"
                 alt="Image of all the ingredients" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Preheat the oven to 350 degrees F (175 degrees C). Lightly grease a 9x5-inch loaf pan.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Sift flour, sugar, cocoa, baking soda, and salt together in a large bowl.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/mNLlUKDVJiR8JLrNG1-pPBK9UaM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16779-vegan-chocolate-cake-step2-520-deda19f32b1a44bbbe096c5abcd61df0.jpg"
                 alt="Image of some mixed ingredients in a large bowl" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Add water, oil, vanilla, and vinegar; mix together until smooth.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/YTAj-e4MR5_rQyUnA9IDbBC4A_I=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16779-vegan-chocolate-cake-step3-523-893ddbd63dae43c18cae90d9f949d626.jpg"
                 alt="Image of the mixture poured into the mold" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Pour mixture into the prepared pan.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/kSetyxiSP7lWvif6jL4LiFT6Iwk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16779-vegan-chocolate-cake-step4-525-9bc52101772f41b286055495eed82e87.jpg"
                 alt="Image of a homogeneous mass" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
-                Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 45 minutes.
+                Bake in the preheated oven until a toothpick inserted into the center comes out clean, about 45
+                minutes.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/5Atw5gNRTcAd7CGFZMRRElxMzOw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16779-vegan-chocolate-cake-step5-528-1ffdddc88a0d4faba7df8694f52801d1.jpg"
                 alt="Image of a sponge cake baked in the oven" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Serve with berries.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/N7wsgfQDqOK7kXDnUmn7julCYjI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/63321476_vegan-chocolate-cake_Rita-3x2-c3ce788f165e4ff4b0d1d74969173407.jpg"
                 alt="Image of a sponge cake served with raspberries on a plate" width="600" height="450">
@@ -137,8 +170,8 @@
       </article>
     </section>
   </main>
-  <footer>
-    <p>©2024 Odin Recipes website | all rights reserved</p>
+  <footer class="footer">
+    <p>©2024 Odin Recipes website</p>
   </footer>
 </body>
 

@@ -4,111 +4,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font 'Inter' connection -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Tiramisu dessert</title>
-  <!-- Document favicon in browser tabs -->
-  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Odin R" />
-  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
   <!-- Document Search Engine Optimization -->
-  <meta name="description" content="THE ODIN project website with recipes. Page: 'Tiramisu dessert'">
+  <meta name="description"
+    content="Welcome to the recipe page from the Dessert section of the Odin Recipes website. The recipe for Tiramisu dessert is described here.">
   <meta name="keywords"
-    content="THE ODIN project, Odin Recipes, Odin R, website, recipes, HTML, CSS, JavaScript, Italian food, Tiramisu dessert">
+    content="THE ODIN project, Odin Recipes, OdinR, website, recipes, cooking, desserts recipes, tiramisu dessert">
   <meta name="author" content="Alisa Chentsova for THE ODIN project">
-  <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <!-- Document external styles (CSS files) connection -->
+  <link rel="stylesheet" href="/assets/styles/reset-file/reset-modern.css">
+  <link rel="stylesheet" href="/assets/styles/recipes-pages/tiramisu.css">
 </head>
 
 <body>
-  <header>
-    <a href="/index.html">
-      <img src="/assets/favicons/favicon-96x96.png" alt="Logotype" />
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="/index.html">
+      <h1 class="logo__h1-heading">Odin Recipes</h1>
     </a>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutOR">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="mailto:odinrecipes@example.com">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
-  <main>
-    <h1>Tiramisu dessert</h1>
-    <img
-      src="https://www.allrecipes.com/thmb/hMmzh93mFQ5CGALUpt5VK7NCFcw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-DDMFS-4x3-cb78d4ad0e75477ebc2a16968c508fde.jpg"
-      alt="Tiramisu dessert" width="650" height="500">
+  <!-- Main content -->
+  <main class="tiramisu-dessert-page">
+    <h1 class="tiramisu-dessert-page__title">Tiramisu dessert</h1>
+    <p class="tiramisu-dessert-page__subtitle">Recipe description</p>
     <section>
-      <h2>Recipe description</h2>
-      <p>Total time: 5 hrs 35 mins</p>
-      <p>Servings: 12</p>
-
+      <div class="description-container">
+        <img
+          src="https://www.allrecipes.com/thmb/hMmzh93mFQ5CGALUpt5VK7NCFcw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-DDMFS-4x3-cb78d4ad0e75477ebc2a16968c508fde.jpg"
+          alt="Tiramisu dessert" width="650" height="500">
+        <div class="description">
+          <p class="description-left">Total time:</p>
+          <p class="description-right">5 hrs 35 mins</p>
+        </div>
+        <div class="description">
+          <p class="description-left">Servings:</p>
+          <p class="description-right">12</p>
+        </div>
+      </div>
       <article>
-        <h3>Ingredients:</h3>
-        <ul>
-          <li>6 large egg yolks</li>
-          <li>¾ cup white sugar</li>
-          <li>⅔ cup milk</li>
-          <li>1 ¼ cups heavy cream</li>
-          <li>½ teaspoon vanilla extract</li>
-          <li>1 pound mascarpone cheese, at room temperature</li>
-          <li>¼ cup strong brewed coffee, at room temperature</li>
-          <li>2 tablespoons rum</li>
-          <li>2 (3 ounce) packages ladyfinger cookies</li>
-          <li>1 tablespoon unsweetened cocoa powder</li>
-        </ul>
+        <details class="ingredients">
+          <summary>Ingredients list:</summary>
+          <ul class="ingredients__list">
+            <li>6 large egg yolks</li>
+            <li>¾ cup white sugar</li>
+            <li>⅔ cup milk</li>
+            <li>1 ¼ cups heavy cream</li>
+            <li>½ teaspoon vanilla extract</li>
+            <li>1 pound mascarpone cheese, at room temperature</li>
+            <li>¼ cup strong brewed coffee, at room temperature</li>
+            <li>2 tablespoons rum</li>
+            <li>2 (3 ounce) packages ladyfinger cookies</li>
+            <li>1 tablespoon unsweetened cocoa powder</li>
+          </ul>
+        </details>
       </article>
 
       <article>
-        <h3>Steps</h3>
-        <ol>
-          <li>
-            <figure>
+        <h3 class="steps-title">Steps</h3>
+        <ol class="steps__list">
+          <li class="step">
+            <div class="text">
               <p>
                 Gather the ingredients.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Whisk egg yolks and sugar together in a medium saucepan until well blended.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Whisk in milk and cook over medium heat, stirring constantly, until mixture comes to a boil.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/hbXZiVisdA5uLNg1K7VRVRfSOmA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-step-1-20-b8ff348727d44d87922d6e569518ae64.jpg"
                 alt="Image of a mixture with poured milk on the stove" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Boil gently for 1 minute, then remove from the heat and allow to cool slightly.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Cover tightly and chill in the refrigerator for 1 hour.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Beat cream and vanilla in a medium bowl with an electric mixer until stiff peaks form.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/0yGMU5aZ8SlVu-Afq1XdeLJ051w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-step-2-19-d62a7b9fc5c74f5da30954d0e65782b7.jpg"
                 alt="Image of whipped cream and vanilla in a medium-sized bowl with an electric mixer" width="600"
@@ -116,33 +140,38 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Remove egg yolk mixture from the refrigerator; add mascarpone cheese and whisk until smooth.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
-                Combine coffee and rum in a small bowl. Split ladyfingers in half lengthwise and drizzle with the coffee
+                Combine coffee and rum in a small bowl. Split ladyfingers in half lengthwise and drizzle with the
+                coffee
                 mixture. Arrange 1/2 of the soaked ladyfingers in the bottom of a 7x11-inch dish.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/FlX2m6zXPeZDaBUX1cGRr_DH-vk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-step-3-39-7af7b76dd84f464c8793c19834d4944b.jpg"
                 alt="Image of ladyfingers laid out on the bottom of a 7x11 inch mold" width="600" height="450">
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Spread 1/2 of the mascarpone mixture over the ladyfingers, then spread 1/2 of the whipped cream over
                 top.
                 Repeat layers once more.
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/UUpIEqnE6T7ST-WCa8DjivoC9yk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-step-3-46-fcc5833fef5d4d189018fdfa70c8f233.jpg"
                 alt="Image of packing mascarpone mixture in layers into a container, and whipped cream on top"
@@ -150,27 +179,29 @@
             </figure>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Sprinkle cocoa powder over top.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <p>
                 Cover and refrigerate until set, 4 to 6 hours.
               </p>
-            </figure>
+            </div>
           </li>
 
-          <li>
-            <figure>
+          <li class="step">
+            <div class="text">
               <figcaption>
                 Enjoy!
               </figcaption>
+            </div>
+            <figure class="image">
               <img
                 src="https://www.allrecipes.com/thmb/hMmzh93mFQ5CGALUpt5VK7NCFcw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21412-tiramisu-ii-DDMFS-4x3-cb78d4ad0e75477ebc2a16968c508fde.jpg"
                 alt="Image of the dessert serving" width="600" height="450">
@@ -180,8 +211,8 @@
       </article>
     </section>
   </main>
-  <footer>
-    <p>©2024 Odin Recipes website | all rights reserved</p>
+  <footer class="footer">
+    <p>©2024 Odin Recipes website</p>
   </footer>
 </body>
 

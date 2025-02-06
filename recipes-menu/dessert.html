@@ -4,36 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Document Google font '_________' connection -->
+  <!-- Document Google font 'Medieval Sharp' connection -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Dessert</title>
-  <!-- Document favicon in browser tabs -->
   <!-- Document Search Engine Optimization -->
-  <!-- Document external styles (CSS file) connection -->
-  <!-- TODO: import CSS file: -->
-  <!-- <link rel="stylesheet" href="#"> -->
+  <meta name="description"
+    content="Welcome to the Dessert section of the Odin Recipes website. There is a collection of Dessert recipes here.">
+  <meta name="keywords"
+    content="THE ODIN project, Odin Recipes, OdinR, website, recipes, cooking, dessert, dessert recipes">
+  <meta name="author" content="Alisa Chentsova for THE ODIN project">
+  <!-- Document external styles (CSS files) connection -->
+  <link rel="stylesheet" href="/assets/styles/reset-file/reset-modern.css">
+  <link rel="stylesheet" href="/assets/styles/recipes-menu-section/dessert.css">
 </head>
 
 <body>
-  <main>
-    <h1>Dessert</h1>
-    <div class="main__recipes-container">
-      <section>
-        <article>
-          <p class="main__article-title">Recipe collections</p>
-          <ul class="main__article-list">
-            <li class="main__article-item">
-              <a class="main__article-link" href="/recipes/tiramisu.html">Tiramisu dessert
-              </a>
-            </li>
-            <li class="main__article-item">
-              <a class="main__article-link" href="/recipes/vegchoccake.html">Vegan Chocolate Cake
-              </a>
-            </li>
-          </ul>
-        </article>
-      </section>
-    </div>
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="/index.html">
+      <h1 class="logo__h1-heading">Odin Recipes</h1>
+    </a>
+    <!-- Nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutOR">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="mailto:odinrecipes@example.com">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main class="dessert-page">
+    <h1 class="dessert-page__title">Dessert</h1>
+    <article>
+      <p class="dessert-page__article-title">Recipe collection</p>
+      <ul class="dessert-page__article-list">
+        <li class="dessert-page__article-item">
+          <a class="dessert-page__article-link" href="/recipes/tiramisu.html">Tiramisu
+          </a>
+        </li>
+        <li class="dessert-page__article-item">
+          <a class="dessert-page__article-link" href="/recipes/vegchoccake.html">Vegan Chocolate cake
+          </a>
+        </li>
+        <li class="dessert-page__article-item">
+          <a class="dessert-page__article-link-blank" href="#">The third recipe is coming soon ...
+          </a>
+        </li>
+      </ul>
+    </article>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__paragraph">©2024 Odin Recipes website</p>
+  </footer>
 </body>
 
 </html>
