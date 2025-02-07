@@ -22,14 +22,16 @@ The site serves as a collection of recipes, organized in a clear and easy-to-und
 - **User Interface**:
   - Built-in functionality for users to send an email through a mailto link, simplifying interaction with the site owner.
   - Simple and intuitive navigation with a focus on accessibility.
+  - Stunning vector icons are used to enhance the quality of the user interface.
 - **SEO Optimization**:
   - Proper use of meta tags and alt attributes for images to improve visibility on search engines.
-  - Structured content for effective indexing and discovery by search engines
+  - Structured content for effective indexing and discovery by search engines.
 
 ## Technologies Used
 - **HTML5**: Semantic structure, improved accessibility, and SEO.
 - **CSS3**: Styling and responsive layout.
 - **Google Fonts**: Use of custom fonts to enhance the visual appearance and readability.
+- **Iconfinder Icons**: Scalable SVG icons from the free package by Daniel Rodriguez are used to improve adaptability and visual communication.
 
 ## Рublished Website
 https://codersimone.github.io/odin-recipes/

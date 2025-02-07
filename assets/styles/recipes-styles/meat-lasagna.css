@@ -103,7 +103,8 @@ body {
 }
 
 .ingredients__list {
-  margin-left: 1em;
+  margin-left: 2em;
+  list-style-type: circle;
 }
 
 .steps-title {
