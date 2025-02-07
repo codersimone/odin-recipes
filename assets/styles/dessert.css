@@ -81,9 +81,9 @@ body {
   list-style-type: circle;
 }
 
-.dessert-page__article-link-blank {
+.dessert-page__article-paragraph {
   opacity: 0.5;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .footer {
