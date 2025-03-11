@@ -31,7 +31,8 @@ The site serves as a collection of recipes, organized in a clear and easy-to-und
 - **HTML5**: Semantic structure, improved accessibility, and SEO.
 - **CSS3**: Styling and responsive layout.
 - **Google Fonts**: Use of custom fonts to enhance the visual appearance and readability.
-- **Iconfinder Icons**: Scalable SVG icons from the free package by Daniel Rodriguez are used to improve adaptability and visual communication.
+- **Iconfinder Icons**: Scalable SVG icons are taken from the free package of author Daniel Rodriguez from the [Iconfinder](https://www.iconfinder.com/) website and are used to improve adaptability and visual communication..
+- **Recipes and Pictures**: All recipes and their images are taken from the [allrecipes](https://www.allrecipes.com/) website and provided exclusively for educational, non-commercial purposes.
 
 ## Рublished Website
 https://codersimone.github.io/odin-recipes/
