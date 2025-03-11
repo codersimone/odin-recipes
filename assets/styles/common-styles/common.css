@@ -1,4 +1,4 @@
-body {
+.body {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -14,20 +14,21 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.header {
+  justify-content: space-between;
+}
+
 .header,
 .footer {
   display: flex;
   align-items: center;
-}
-
-.header,
-.main-dish-page,
-.footer {
   padding: 1em 2em;
 }
 
-.header {
-  justify-content: space-between;
+.main-page,
+.recipes-menu-pages,
+.recipes-pages {
+  padding: 1em 2em;
 }
 
 .logo {
@@ -45,7 +46,8 @@ body {
 }
 
 .nav__link,
-.main-dish-page__article-link {
+.main-page__article-link,
+.recipes-menu-pages__article-link {
   font-weight: bold;
   letter-spacing: 0.2em;
   color: rgb(48, 48, 48);
@@ -53,22 +55,27 @@ body {
 }
 
 .nav__link:hover,
-.nav__link:focus {
+.nav__link:focus,
+.recipes-menu-pages__article-link:hover,
+.recipes-menu-pages__article-link:focus {
   color: rgb(204, 0, 0);
 }
 
-/* Main content */
-.main-dish-page {
+/* Main content styles */
+.recipes-menu-pages,
+.recipes-pages {
   flex: 1;
 }
 
-.main-dish-page__title {
+.recipes-menu-pages__title,
+.recipes-pages__title {
   margin-top: 3em;
   padding-bottom: 0.1em;
   text-align: center;
 }
 
-.main-dish-page__article-title {
+.recipes-menu-pages__article-title,
+.recipes-pages__subtitle {
   margin-bottom: 2em;
   font-size: 1.6em;
   font-weight: 600;
@@ -77,15 +84,7 @@ body {
   color: rgb(227, 178, 97);
 }
 
-.main-dish-page__article-list {
-  list-style-type: circle;
-}
-
-.main-dish-page__article-paragraph {
-  opacity: 0.5;
-  /* cursor: none; */
-}
-
+/* Footer styles */
 .footer {
   flex-shrink: 0;
   justify-content: center;

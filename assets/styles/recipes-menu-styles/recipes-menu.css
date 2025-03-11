@@ -1,0 +1,8 @@
+.recipes-menu-pages__article-list {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.recipes-menu-pages__article-paragraph {
+  opacity: 0.5;
+}
