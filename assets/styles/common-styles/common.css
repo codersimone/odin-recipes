@@ -6,7 +6,6 @@
   min-height: 100vh;
   margin: 0 auto;
   font-family: "MuseoModerno", "Palatino", serif;
-  font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
   line-height: 1.6em;
@@ -41,7 +40,6 @@
 
 .nav__list {
   display: flex;
-  padding-left: 2em;
   gap: 3em;
 }
 
